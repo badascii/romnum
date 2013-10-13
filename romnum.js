@@ -1,4 +1,4 @@
-function decimalToRoman (decNumber) {
+var decimalToRoman = function(decNumber) {
   var romNumeral = "";
   var digitsArray = ("" + decNumber).split("");
   var length = digitsArray.length;
@@ -11,32 +11,12 @@ function decimalToRoman (decNumber) {
      500 : "D",
     1000 : "M"
   };
-  // Implement here!
-  for (i = 0; i < length; i++) {
-    num = parseInt(digitsArray[i], 10);
-    switch(num)
-    {
-    case 1:
-
-      break;
-    case 2:
-      execute code block 2
-      break;
-    default:
-      code to be executed if n is different from case 1 and 2
-    }
 
     if (length === 4) {
       for (i = 0; i < num; i++)
       romNumerals += numerals.1000;
     }
-
-    // if (length === 4) {
-    //   var number = parseInt(digitsArray[0], 10);
-    //   for (i = 0; i < counter; i++) {
-    //     romNumeral += "M";
   };
-
 
   return romNumeral;
 };
@@ -70,7 +50,6 @@ var processDigit = function(digit) {
       returnString = "Cannot process numbers greater than 4 digits.";
     }
 
-
   case 5:
 
   case 6:
@@ -84,8 +63,7 @@ var processDigit = function(digit) {
   }
 }
 
-function romanToDecimal (romNumeral) {
+var romanToDecimal = function(romNumeral) {
   var decNumber = 0;
-
   return decNumber;
 };
